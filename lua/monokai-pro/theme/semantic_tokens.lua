@@ -9,7 +9,9 @@ M.setup = function(c, config, hp)
     ["@lsp.type.boolean"]                       = { link = "@boolean" },
     ["@lsp.type.builtinType"]                   = { link = "@type.builtin" },
     ["@lsp.type.class"]                         = {}, -- use treesitter styles
-    ["@lsp.type.comment"]                       = { link = "@comment" },
+    ["@lsp.type.comment"]                       = {}, -- it breaks TODO comments
+    ["@lsp.type.comment.c"]                     = { link = "@comment" },
+    ["@lsp.type.comment.cpp"]                   = { link = "@comment" },
     ["@lsp.type.decorator"]                     = { link = "@attribute" },
     ["@lsp.type.deriveHelper"]                  = { link = "@attribute" },
     ["@lsp.type.enum"]                          = { link = "@type" },
