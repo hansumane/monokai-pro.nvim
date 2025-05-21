@@ -10,7 +10,7 @@ M.load = function()
   util.theme.load(theme.setup())
 end
 
---- @param filter "light" | "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum"
+--- @param filter "light" | "classic" | "machine" | "octagon" | "pro" | "ristretto" | "spectrum" | "molokai"
 M._load = function(filter)
   config.extend({ filter = filter })
   M.load()
